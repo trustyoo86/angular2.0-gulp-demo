@@ -1,0 +1,4 @@
+<form role="form">
+  <input title="Name" type="text" [(ngModel)]="todo.name" [disabled]="todo.done" />
+  <input title="Done" type="checkbox" (click)="toggleDone()" [checked]="todo.done" />
+</form>

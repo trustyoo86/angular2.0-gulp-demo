@@ -1,0 +1,12 @@
+<h1>Todo lists</h1>
+<ul>
+  <li *ngFor="let todo of todos; let idx=index" [class.selected]="todo == selectedTodo">
+      <a href="javascript:void(0)" (click)="select(todo)">
+        {{todo.name}}
+        <span [ngSwitch]="todo.done">
+          <template [ngSwitchWhen]="true">[Done]</template>
+          <template [ngSwitchWhen]="false">[Todo]</template>
+        </span>
+      </a>
+  </li>
+</ul>

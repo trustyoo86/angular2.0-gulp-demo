@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/app",
+    "target": "ES5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "compileOnSave": false,
+  "filesGlob": [
+    "app/**/*.ts",
+    "typings/**/*.d.ts",
+    "node_modules/immutable/dist/immutable.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "app/boot.ts",
+    "app/components/about/about.component.ts",
+    "app/components/app.component.ts",
+    "app/components/todo/todo-list.component.ts",
+    "app/components/todo/todo.component.ts",
+    "app/models/todo.ts",
+    "app/services/todo-service.ts",
+    "node_modules/immutable/dist/immutable.d.ts"
+  ]
+}
